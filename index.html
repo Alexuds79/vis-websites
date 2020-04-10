@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>VIS MAGAZINE</title>
+
+    <!-- HOJAS DE ESTILO (Descomentar la opción elegida) -->
+    <!-- <link rel="stylesheet" href="styles/pressDesign.css"> -->
+    <link rel="stylesheet" href="styles/gamingDesign.css">
+    <!-- <link rel="stylesheet" href="styles/fashionDesign.css"> -->
+</head>
+
+<body>
+    <div class="Header">
+        <header>
+            <object class="VISLogo" data="vectors/logoVISMagazine.svg" type="image/svg+xml"></object>
+            <object class="VISLogoGaming" data="vectors/VISGameLogoText.svg" type="image/svg+xml"></object>
+            <object class="VISLogoFashion" data="vectors/VISFashionLogo.svg" type="image/svg+xml"></object>
+
+            <nav>
+                <a href="#" class="hideOnDesktop">
+                    <img src="vectors/ham.svg" alt="toggle menu" class="ham-menu" id="ham-menu">
+                </a>
+
+                <ul class="showOnDesktop hideOnMobile" id="nav">
+                    <li id="exit" class="exit-btn hideOnDesktop">
+                        <img src="vectors/exit.svg" alt="exit menu">
+                    </li>
+
+                    <li><a href="#Sinopsis">SINOPSIS</a></li>
+                    <li><a href="#Necesidades">NECESIDADES</a></li>
+                    <li><a href="#Tecnologias">TECNOLOGÍAS</a></li>
+                    <li><a href="#Impacto">IMPACTO</a></li>
+                    <li><a href="#Referencias">REFERENCIAS</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="CoverSection">
+            <object class="VISName" data="vectors/VISMagazine.svg" type="image/svg+xml"></object>
+            <object class="VISGameLogoGreen" data="vectors/VISGameLogoGreen.svg" type="image/svg+xml"></object>
+            <object class="VISFashionName" data="vectors/VISFashionName.svg" type="image/svg+xml"></object>
+
+            <section class="CoverText">
+                <p class="FilmDescription">2011</p>
+                <h1 class="FilmTitle">'IN TIME'</h1>
+            </section>
+        </div>
+
+        <img class="ArrowScroll" src="vectors/arrow.svg" alt="ArrowScroll">
+        <img class="ArrowGaming" src="vectors/arrow2.svg" alt="ArrowGaming">
+        <img class="ArrowWhite" src="vectors/arrowWhite.svg" alt="ArrowWhite">
+
+    </div>
+
+    <!-- Including Javascript to display the mobile menu-->
+    <script>
+        var menu = document.getElementById('ham-menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hideOnMobile');
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click', function(e) {
+            nav.classList.add('hideOnMobile');
+            e.preventDefault();
+        });
+    </script>
+
+
+    <!-- SINOPSIS -->
+    <div class="Sinopsis" id="Sinopsis">
+        <h2 class="SinopsisTitle">SIN<br>OP<br>SIS</h2>
+        <p class="SinopsisText">
+            Lorem ipsum dolor sit amet, quo essent civibus ad. Cu eam dolorum omittantur, vix id paulo platonem, laudem intellegam sea an. Ut amet percipit ius, volumus platonem omittantur usu ad, eu virtute appetere persecuti his. Et utinam conceptam repudiandae
+            vim, vel ut ipsum dicat. Detracto nominavi electram an mei, nam an minim animal eloquentiam, alia libris bonorum usu an.
+        </p>
+    </div>
+
+    <!-- NECESIDADES -->
+    <div class="Necesidades" id="Necesidades">
+        <p class="NeedsText">
+            Eros nulla laboramus ei mea. His error omittantur et. Usu ei posse choro consulatu, est delicata percipitur id. Pro no inani iriure conceptam. Enim disputationi vix ex, his ne deleniti perpetua periculis, meliore signiferumque est ut.
+        </p>
+        <h2 class="NeedsTitle">NECESIDADES</h2>
+    </div>
+
+    <!-- GADGETS SECTION 1 -->
+    <div class="Gadgets">
+        <div class="GadgetsText">
+            <nav class="MenuGadget">
+                <a href="#Btn1" id="Btn1">1</a>
+                <a href="#Btn2" id="Btn2">2</a>
+                <a href="#Btn3" id="Btn3">3</a>
+                <a href="#Btn4" id="Btn4">4</a>
+            </nav>
+
+            <div class="TimeGadget">
+                <div class="Rectangle"></div>
+                <p class="TimeText" id="TimeText1">008'27</p>
+            </div>
+            <h2 class="NameGadget" id="NameGadget1">GADGET #1</h2>
+            <p class="DescriptionGadget">
+                Nulla homero moderatius ut eum, dolores nominati sea eu. Lorem praesent in vel, ius et solet cetero. Ea duo mundi iisque, vix legere dissentias et, est omnes melius ad. Iuvaret postulant eu eam, te offendit constituam pro. Qui et putent noster vivendo,
+                ea duo cibo dolorum, augue constituam inciderint vis ne. Inani tollit an quo, mei alia elit cetero ea, ut est laoreet philosophia.
+            </p>
+        </div>
+
+        <div class="GadgetsImages">
+            <div class="Image1">
+                <img src="images/timeKeeper.jpg" alt="TimeKeeper">
+
+                <div class="Overlay1" id="Overlay1">
+                    <div class="OverlayText">Leer+</div>
+                </div>
+            </div>
+
+            <div class="Image2">
+                <img src="images/actors.jpg" alt="Actors">
+
+                <div class="Overlay2" id="Overlay2">
+                    <div class="OverlayText">Leer+</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="GadgetsImages">
+            <div class="Image1">
+                <img src="images/girl.jpg" alt="TimeKeeper">
+
+                <div class="Overlay1" id="Overlay3">
+                    <div class="OverlayText">Leer+</div>
+                </div>
+            </div>
+
+            <div class="Image2">
+                <img src="images/oldMan.jpg" alt="Actors">
+
+                <div class="Overlay2" id="Overlay4">
+                    <div class="OverlayText">Leer+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- GADGETS SECTION 2 -->
+    <div class="Gadgets">
+        <div class="GadgetsText">
+            <nav class="MenuGadget">
+                <a href="#Btn5" id="Btn5">5</a>
+                <a href="#Btn6" id="Btn6">6</a>
+                <a href="#Btn7" id="Btn7">7</a>
+                <a href="#Btn8" id="Btn8">8</a>
+            </nav>
+
+            <div class="TimeGadget">
+                <div class="Rectangle"></div>
+                <p class="TimeText" id="TimeText2">044'41</p>
+            </div>
+            <h2 class="NameGadget" id="NameGadget2">GADGET #5</h2>
+            <p class="DescriptionGadget">
+                Nulla homero moderatius ut eum, dolores nominati sea eu. Lorem praesent in vel, ius et solet cetero. Ea duo mundi iisque, vix legere dissentias et, est omnes melius ad. Iuvaret postulant eu eam, te offendit constituam pro. Qui et putent noster vivendo,
+                ea duo cibo dolorum, augue constituam inciderint vis ne. Inani tollit an quo, mei alia elit cetero ea, ut est laoreet philosophia.
+            </p>
+        </div>
+
+        <div class="GadgetsImages">
+            <div class="Image1">
+                <img src="images/beginning.jpg" alt="TimeKeeper">
+
+                <div class="Overlay1" id="Overlay5">
+                    <div class="OverlayText">Leer+</div>
+                </div>
+            </div>
+
+            <div class="Image2">
+                <img src="images/running.jpg" alt="Actors">
+
+                <div class="Overlay2" id="Overlay6">
+                    <div class="OverlayText">Leer+</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="GadgetsImages">
+            <div class="Image1">
+                <img src="images/twoBoys.jpg" alt="TimeKeeper">
+
+                <div class="Overlay1" id="Overlay7">
+                    <div class="OverlayText">Leer+</div>
+                </div>
+            </div>
+
+            <div class="Image2">
+                <img src="images/armTimeColor.jpg" alt="Actors">
+
+                <div class="Overlay2" id="Overlay8">
+                    <div class="OverlayText">Leer+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GADGETS: CHANGE CONTENT -->
+    <script>
+        var btn1 = document.getElementById('Btn1');
+        var btn2 = document.getElementById('Btn2');
+        var btn3 = document.getElementById('Btn3');
+        var btn4 = document.getElementById('Btn4');
+        var btn5 = document.getElementById('Btn5');
+        var btn6 = document.getElementById('Btn6');
+        var btn7 = document.getElementById('Btn7');
+        var btn8 = document.getElementById('Btn8');
+
+        btn1.addEventListener('click', function(e) {
+            var element = document.getElementById("NameGadget1");
+            element.innerHTML = "GADGET #1";
+
+            var time = document.getElementById("TimeText1");
+            time.innerHTML = "008'27";
+        });
+
+        btn2.addEventListener('click', function(e) {
+            var element = document.getElementById("NameGadget1");
+            element.innerHTML = "GADGET #2";
+
+            var time = document.getElementById("TimeText1");
+            time.innerHTML = "011'14";
+        });
+
+        btn3.addEventListener('click', function(e) {
+            var element = document.getElementById("NameGadget1");
+            element.innerHTML = "GADGET #3";
+
+            var time = document.getElementById("TimeText1");
+            time.innerHTML = "012'56";
+        });
+
+        btn4.addEventListener('click', function(e) {
+            var element = document.getElementById("NameGadget1");
+            element.innerHTML = "GADGET #4";
+
+            var time = document.getElementById("TimeText1");
+            time.innerHTML = "038'51";
+        });
+
+        btn5.addEventListener('click', function(e) {
+            var element = document.getElementById("NameGadget2");
+            element.innerHTML = "GADGET #5";
+
+            var time = document.getElementById("TimeText2");
+            time.innerHTML = "044'41";
+        });
+
+        btn6.addEventListener('click', function(e) {
+            var element = document.getElementById("NameGadget2");
+            element.innerHTML = "GADGET #6";
+
+            var time = document.getElementById("TimeText2");
+            time.innerHTML = "058'20";
+        });
+
+        btn7.addEventListener('click', function(e) {
+            var element = document.getElementById("NameGadget2");
+            element.innerHTML = "GADGET #7";
+
+            var time = document.getElementById("TimeText2");
+            time.innerHTML = "101'26";
+        });
+
+        btn8.addEventListener('click', function(e) {
+            var element = document.getElementById("NameGadget2");
+            element.innerHTML = "GADGET #8";
+
+            var time = document.getElementById("TimeText2");
+            time.innerHTML = "108'13";
+        });
+    </script>
+
+
+    <script>
+        var ov1 = document.getElementById('Overlay1');
+        var ov2 = document.getElementById('Overlay2');
+        var ov3 = document.getElementById('Overlay3');
+        var ov4 = document.getElementById('Overlay4');
+        var ov5 = document.getElementById('Overlay5');
+        var ov6 = document.getElementById('Overlay6');
+        var ov7 = document.getElementById('Overlay7');
+        var ov8 = document.getElementById('Overlay8');
+
+        ov1.addEventListener('click', function(e) {
+            var element = document.getElementById("NameGadget1");
+            element.innerHTML = "GADGET #1";
+
+            var time = document.getElementById("TimeText1");
+            time.innerHTML = "008'27";
+        });
+
+        ov2.addEventListener('click', function(e) {
+            var element = document.getElementById("NameGadget1");
+            element.innerHTML = "GADGET #2";
+
+            var time = document.getElementById("TimeText1");
+            time.innerHTML = "011'14";
+        });
+
+        ov3.addEventListener('click', function(e) {
+            var element = document.getElementById("NameGadget1");
+            element.innerHTML = "GADGET #3";
+
+            var time = document.getElementById("TimeText1");
+            time.innerHTML = "012'56";
+        });
+
+        ov4.addEventListener('click', function(e) {
+            var element = document.getElementById("NameGadget1");
+            element.innerHTML = "GADGET #4";
+
+            var time = document.getElementById("TimeText1");
+            time.innerHTML = "038'51";
+        });
+
+        ov5.addEventListener('click', function(e) {
+            var element = document.getElementById("NameGadget2");
+            element.innerHTML = "GADGET #5";
+
+            var time = document.getElementById("TimeText2");
+            time.innerHTML = "044'41";
+        });
+
+        ov6.addEventListener('click', function(e) {
+            var element = document.getElementById("NameGadget2");
+            element.innerHTML = "GADGET #6";
+
+            var time = document.getElementById("TimeText2");
+            time.innerHTML = "058'20";
+        });
+
+        ov7.addEventListener('click', function(e) {
+            var element = document.getElementById("NameGadget2");
+            element.innerHTML = "GADGET #7";
+
+            var time = document.getElementById("TimeText2");
+            time.innerHTML = "101'26";
+        });
+
+        ov8.addEventListener('click', function(e) {
+            var element = document.getElementById("NameGadget2");
+            element.innerHTML = "GADGET #8";
+
+            var time = document.getElementById("TimeText2");
+            time.innerHTML = "108'13";
+        });
+    </script>
+
+
+    <!-- TECNOLOGÍAS -->
+    <div class="Tecnologias" id="Tecnologias">
+        <div class="TechGeneral">
+            <h2 class="TechTitleDesktop">Tecnologías<br>involucradas</h2>
+            <h2 class="TechTitleMobile">Tecnologías involucradas</h2>
+            <p class="TechDescription">
+                Alii mollis commune te ius. Sed id augue nullam delicata, in praesent repudiare qui. Cu brute partem aperiam vim. Vel hinc integre facilisis ea, vix idque invidunt insolens an. Per elit labore concludaturque no, ex per melius recteque.
+            </p>
+        </div>
+
+        <div class="TechTypes">
+            <h3 class="TechSubTitle">Tecnologías disponibles<br>en el momento de la producción</h3>
+            <p class="TechSubDescription">
+                Essent neglegentur disputationi vel eu. Id perfecto consectetuer duo. Aliquip molestie voluptatibus usu eu, nam electram prodesset ea, vix quis eius ocurreret in. Malis expetendis nec ex, cum posse voluptua antiopam [<a href="#ref1">1</a>]
+                ei. Ne pri dicit debitis, ea cum dicat prodesset eloquentiam, quo te solum graecis habemus.
+            </p>
+
+            <h3 class="TechSubTitle">Tecnologías imaginadas<br>en el momento de la producción</h3>
+            <p class="TechSubDescription">
+                Nec at saepe epicuri ocurreret. Oportere reprehendunt his ne, inani aliquando ex per. Ignota animal integre ut sit, ius [<a href="#ref2">2</a>] cu nonumes partiendo. Sea te nulla blandit. Duo at erat perpetua, cu affert probatus menandri
+                sed [<a href="#ref3">3</a>].
+            </p>
+        </div>
+    </div>
+
+    <!-- IMPACTO -->
+    <div class="Impacto" id="Impacto">
+        <h2 class="ImpactoTitle">IMPACTO</h2>
+        <p class="ImpactoText">
+            Duo ex alienum platonem reprimique, pri ne quas augue. Id sea solum graeco, te quo eligendi aliquando voluptatum, autem virtute labores ei has. Ut vim omnium integre copiosae, harum menandri corrumpit per ut. Duo ei saepe iriure animal. Te usu modo maiorum
+            fabellas, vix in meis recusabo sadipscing. Et tractatos adolescens voluptaria has, eum postea assentior te. At soluta nominati mel. Et est causae oporteat evertitur, cu fugit nonumy adipiscing quo. Sea ex diam oblique persius, sed semper vituperata
+            ex. Sit quot volumus neglegentur cu. Ut mel perfecto salutatus urbanitas, justo nostrum ei eos. At vocent eligendi inimicus vix, illud saperet ex mei. Per eu causae apeirian. Quodsi deseruisse definiebas mea cu, magna suscipiantur has te,
+            at pri erant option scaevola.
+        </p>
+    </div>
+
+    <!-- REFERENCIAS -->
+    <div class="Referencias" id="Referencias">
+        <div class="ListRef">
+            <p> <a href="https://www.imdb.com/title/tt1637688/" target="_blank">IMDB</a> </p>
+            <p> <a href="https://es.wikipedia.org/wiki/In_Time" target="_blank">Wikipedia</a> </p>
+
+            <object class="VISLogoFooter" data="vectors/logoVISMagazine.svg" type="image/svg+xml"></object>
+            <object class="VISGameLogoFooter" data="vectors/VISGameLogo.svg" type="image/svg+xml"></object>
+            <object class="VISFashionLogoFooter" data="vectors/VISFashionLogo.svg" type="image/svg+xml"></object>
+
+            <p> <a href="https://moodle2.usal.es/" target="_blank">Studium</a> </p>
+            <p> <a href="http://visusal.usal.es/~interfacesimaginadas/" target="_blank">VisUSAL</a> </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

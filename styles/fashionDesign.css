@@ -1,0 +1,722 @@
+@font-face {
+    font-family: "Zefani";
+    src: url(../fonts/Zefani/Zefani_Uppercase_Demo-Regular.otf);
+}
+
+@font-face {
+    font-family: "Aileron-Thin";
+    src: url(../fonts/Aileron/Aileron-Thin.otf);
+}
+
+@font-face {
+    font-family: "Aileron-Black";
+    src: url(../fonts/Aileron/Aileron-Black.otf);
+}
+
+@font-face {
+    font-family: "Aileron-Regular";
+    src: url(../fonts/Aileron/Aileron-Regular.otf);
+}
+
+@font-face {
+    font-family: "Aileron-Bold";
+    src: url(../fonts/Aileron/Aileron-Bold.otf);
+}
+
+@font-face {
+    font-family: "Voga";
+    src: url(../fonts/Voga/Voga-Medium.otf);
+}
+
+
+/************* NO MOSTRAR ELEMENTOS DE OTROS DISEÑOS ************/
+
+.VISLogo {
+    display: none;
+}
+
+.VISName {
+    display: none;
+}
+
+.ArrowScroll {
+    display: none;
+}
+
+.VISLogoFooter {
+    display: none;
+}
+
+.VISLogoGaming {
+    display: none;
+}
+
+.VISGameLogoGreen {
+    display: none;
+}
+
+.ArrowGaming {
+    display: none;
+}
+
+.VISGameLogoFooter {
+    display: none;
+}
+
+
+/********************** FASHION DESIGN ********************/
+
+header {
+    font-family: "Voga";
+    font-size: 15pt;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Header {
+    background: url(../images/coverPink.png);
+    background-size: cover;
+    width: 98.8vw;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.VISLogoFashion {
+    height: 60px;
+    padding: 15px;
+    margin-left: 10px;
+}
+
+
+/******************* VERSIÓN MÓVIL *******************/
+
+.hideOnMobile {
+    display: none;
+}
+
+.ham-menu {
+    width: 35px;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    position: fixed;
+    width: 35%;
+    top: 0;
+    right: 0;
+    text-align: left;
+    background: white;
+    height: 100%;
+    padding-top: 15px;
+}
+
+nav ul li a {
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 20px 30px;
+    background-color: white;
+}
+
+nav ul li a:hover {
+    background-color: #f50057;
+    color: white;
+}
+
+.exit-btn {
+    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-right: 5px;
+    text-align: right;
+    padding: 0 20px;
+}
+
+.exit-btn img {
+    width: 20px;
+    cursor: pointer;
+}
+
+.VISFashionName {
+    height: 200px;
+}
+
+.CoverSection {
+    text-align: center;
+    width: 98.8vw;
+}
+
+.FilmDescription {
+    font-family: "Voga";
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+}
+
+.FilmTitle {
+    font-family: "Voga";
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.CoverText {
+    font-size: 35pt;
+    display: block;
+    line-height: 50px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.ArrowWhite {
+    width: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+    animation: move 1s infinite alternate;
+}
+
+@keyframes move {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(20px);
+    }
+}
+
+.Sinopsis {
+    background: url(../images/cover2.jpg);
+    background-size: cover;
+    display: flex;
+    width: 98.8vw;
+}
+
+.SinopsisTitle {
+    color: black;
+    font-family: "Voga";
+    font-size: 150px;
+    margin: 15px;
+    text-align: right;
+    line-height: 120px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.SinopsisText {
+    font-family: "Aileron-Thin";
+    font-size: 20px;
+    margin-top: 40px;
+    margin-right: 25px;
+    margin-bottom: 40px;
+}
+
+.Necesidades {
+    margin-top: 0;
+    background: url(../images/armTime.jpg);
+    background-size: cover;
+    width: 98.8vw;
+}
+
+.NeedsText {
+    font-family: "Aileron-Thin";
+    color: #f50057;
+    margin-left: 25px;
+    margin-right: 100px;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.NeedsTitle {
+    color: white;
+    font-family: "Voga";
+    font-size: 65px;
+    text-align: right;
+    margin-top: 0;
+    margin-right: 45px;
+    margin-bottom: 5px;
+}
+
+.Gadgets {
+    display: flex;
+    width: 98.8vw;
+}
+
+.GadgetsText {
+    background-color: white;
+    width: 100%;
+}
+
+.TimeGadget {
+    position: relative;
+}
+
+.Rectangle {
+    background-color: #f50057;
+    height: 40px;
+    width: 140px;
+    z-index: 1;
+    position: absolute;
+}
+
+.TimeText {
+    margin-bottom: 0;
+    margin: 2px 20px 0 20px;
+    font-family: "Aileron-Black";
+    color: white;
+    font-size: 30px;
+    text-align: right;
+    z-index: 2;
+    position: absolute;
+}
+
+.NameGadget {
+    font-family: "Voga";
+    font-size: 100px;
+    margin: 55px 20px 0 20px;
+    line-height: 75px;
+    text-align: right;
+}
+
+.DescriptionGadget {
+    margin: 15px 20px 50px 20px;
+    font-family: "Aileron-Thin";
+    font-size: 18px;
+}
+
+.GadgetsImages {
+    display: none;
+}
+
+.MenuGadget {
+    text-align: right;
+    background-color: #f50057;
+    padding-right: 25px;
+    cursor: pointer;
+}
+
+.MenuGadget a {
+    text-decoration: none;
+    color: white;
+    font-family: "Aileron-Black";
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.Tecnologias {
+    background: url(../images/coverCarPink.png);
+    background-size: cover;
+    width: 98.8vw;
+}
+
+.TechGeneral {
+    width: 100%;
+    background-color: #f50057;
+}
+
+.TechTitleMobile {
+    color: white;
+    font-family: "Aileron-Bold";
+    font-size: 65px;
+    margin: 0px 25px 0 25px;
+    padding-top: 15px;
+    line-height: 60px;
+}
+
+.TechTitleDesktop {
+    display: none;
+}
+
+.TechDescription {
+    font-family: "Aileron-Bold";
+    font-size: 20px;
+    margin: 15px 25px 30px 25px;
+    padding-bottom: 20px;
+}
+
+.TechSubTitle {
+    font-family: "Aileron-Bold";
+    text-align: right;
+    font-size: 40px;
+    margin: 15px 25px 0 25px;
+    line-height: 35px;
+}
+
+.TechTypes {
+    width: 100%;
+}
+
+.TechSubDescription {
+    font-family: "Aileron-Thin";
+    text-align: right;
+    font-size: 20px;
+    margin: 15px 25px 30px 25px;
+}
+
+.TechSubDescription a {
+    text-decoration: none;
+    color: black;
+}
+
+.Impacto {
+    display: block;
+    background-color: white;
+    width: 98.8vw;
+}
+
+.ImpactoTitle {
+    font-family: "Voga";
+    font-size: 115px;
+    text-align: justify;
+    line-height: 65px;
+    margin: 30px 15px 0px 15px;
+    font-size: bold;
+}
+
+.ImpactoText {
+    font-family: "Aileron-Thin";
+    text-align: justify;
+    margin: 15px 15px 15px 15px;
+    font-size: 14px;
+}
+
+.ListRef {
+    display: flex;
+    text-align: center;
+    margin: 10px 0 10px 0;
+    font-family: "Aileron-Black";
+    font-size: 14px;
+}
+
+.Referencias {
+    width: 98.8vw;
+}
+
+.Referencias a {
+    text-decoration: none;
+    color: white;
+    padding: 0 10px 0 10px;
+}
+
+.Referencias p {
+    width: 100%;
+}
+
+.VISFashionLogoFooter {
+    padding: 0;
+    width: 50%;
+}
+
+.Referencias a:hover {
+    color: #f50057;
+}
+
+@media only screen and (min-width: 650px) {
+    .SinopsisText {
+        font-size: 28px;
+    }
+    .ListRef {
+        font-size: 20px;
+    }
+    nav ul li a {
+        font-size: 35px;
+    }
+}
+
+
+/**************** VERSIÓN DE ESCRITORIO **************/
+
+@media only screen and (min-width: 850px) {
+    .NeedsTitle {
+        font-size: 90px;
+    }
+    .NeedsText {
+        margin-right: 300px;
+    }
+    .Gadgets {
+        display: flex;
+    }
+    .GadgetsText {
+        background-color: white;
+        width: 55%;
+    }
+    .TimeGadget {
+        position: relative;
+    }
+    .DescriptionGadget {
+        font-size: 20px;
+    }
+    .Rectangle {
+        height: 40px;
+        width: 140px;
+        z-index: 1;
+        position: absolute;
+    }
+    .TimeText {
+        margin-bottom: 0;
+        margin: 2px 20px 0 20px;
+        font-size: 30px;
+        text-align: right;
+        z-index: 2;
+        position: absolute;
+    }
+    .NameGadget {
+        font-size: 100px;
+        margin: 55px 20px 0 20px;
+        line-height: 85px;
+        text-align: left;
+    }
+    .GadgetsImages {
+        display: block;
+        position: relative;
+    }
+    .GadgetsImages img {
+        display: block;
+        object-fit: cover;
+        width: 33vw;
+        height: 50vh;
+    }
+    .Overlay1 {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 20vw;
+        height: 50vh;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #f50057;
+        cursor: pointer;
+    }
+    .Image1:hover .Overlay1 {
+        opacity: 0.8;
+        width: 33vw;
+    }
+    .Overlay2 {
+        position: absolute;
+        top: 50;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 20vw;
+        height: 50vh;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #f50057;
+        cursor: pointer;
+    }
+    .Image2:hover .Overlay2 {
+        opacity: 0.8;
+        width: 33vw;
+    }
+    .OverlayText {
+        font-family: "Aileron-Black";
+        font-weight: bold;
+        font-size: 80px;
+        text-align: right;
+        margin-top: 45%;
+        margin-right: 3%;
+        color: white;
+    }
+    .MenuGadget {
+        display: none;
+    }
+    .VISFashionLogoFooter {
+        width: 30%;
+    }
+    .ListRef {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .VISFashionName {
+        height: 300px;
+    }
+    .CoverText {
+        padding-bottom: 10px;
+    }
+    .ArrowWhite {
+        width: 50px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+    .SinopsisText {
+        font-size: 34px;
+    }
+    .NeedsText {
+        font-size: 35px;
+    }
+    .GadgetsImages img {
+        display: block;
+        object-fit: cover;
+    }
+    .Tecnologias {
+        display: flex;
+        background-size: cover;
+    }
+    .TechGeneral {
+        width: 85%;
+        background-color: #f50057;
+    }
+    .TechTitleDesktop {
+        display: inherit;
+        color: white;
+        font-family: "Aileron-Bold";
+        font-size: 65px;
+        margin: 15px 25px 0 35px;
+        line-height: 55px;
+    }
+    .TechTitleMobile {
+        display: none;
+    }
+    .TechDescription {
+        text-align: justify;
+        font-size: 25px;
+        margin: 15px 25px 30px 25px;
+        padding: 0 10px 0 10px;
+    }
+    .TechSubTitle {
+        text-align: right;
+        font-size: 45px;
+        margin: 15px 25px 0 25px;
+        line-height: 40px;
+    }
+    .TechTypes {
+        width: 130%;
+    }
+    .TechSubDescription {
+        text-align: right;
+        font-size: 20px;
+        margin: 15px 25px 30px 25px;
+    }
+    .TechSubDescription a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+@media only screen and (min-width: 1150px) {
+    .DescriptionGadget {
+        font-size: 22px;
+    }
+    .GadgetsText {
+        width: 40%;
+    }
+    .ListRef {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .showOnDesktop {
+        display: block;
+        margin: 0 auto 13% auto;
+    }
+    .hideOnDesktop {
+        display: none;
+    }
+    nav ul {
+        position: inherit;
+        background: none;
+        width: 1000px;
+        height: auto;
+        display: flex;
+        padding-top: 5px;
+    }
+    nav ul li {
+        float: left;
+    }
+    nav ul li a {
+        color: white;
+        background-color: inherit;
+        text-align: right;
+        padding: 18px;
+        font-size: 32pt;
+    }
+    nav ul li a:hover {
+        color: black;
+        background-color: inherit;
+    }
+    .CoverSection {
+        display: flex;
+        margin-left: 550px;
+        margin-right: 50px;
+    }
+    .VISFashionName {
+        width: auto;
+        padding-bottom: 50px;
+    }
+    .ArrowWhite {
+        width: 50px;
+        display: block;
+        margin-left: auto;
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+    .CoverText {
+        text-align: right;
+        padding-left: 30px;
+        line-height: 50px;
+        padding-top: 80px;
+    }
+    .FilmTitle {
+        font-size: 70px;
+    }
+    .SinopsisTitle {
+        font-size: 160px;
+        line-height: 135px;
+    }
+    .SinopsisText {
+        font-size: 45px;
+    }
+    .NeedsText {
+        font-size: 40px;
+        margin-right: 350px;
+    }
+    .NeedsTitle {
+        font-size: 160px;
+    }
+    .NameGadget {
+        font-size: 140px;
+        line-height: 115px;
+    }
+    .DescriptionGadget {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (min-width: 1450px) {
+    .VISFashionName {
+        height: 300px;
+    }
+    .SinopsisText {
+        font-size: 48px;
+    }
+    .NameGadget {
+        font-size: 140px;
+        line-height: 115px;
+    }
+    .DescriptionGadget {
+        font-size: 28px;
+    }
+}
